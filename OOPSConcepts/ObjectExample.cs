@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPSConcepts
 {
-    internal class ObjectExample
+    public class ObjectExample
     {
         public void Addition()
         {
@@ -20,5 +20,19 @@ namespace OOPSConcepts
 
         }
         
+    }
+    public class Childclass : ObjectExample
+    {
+        public void Subtraction()
+        {
+            Console.WriteLine("Enter 1st Number");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd Number");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = a - b;
+            Console.WriteLine("Diffrence of two number is => " + c);
+
+
+        }
     }
 }

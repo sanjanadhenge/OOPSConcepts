@@ -10,8 +10,9 @@ namespace OOPSConcepts
     {
         public static void Main(string[] args)
         {
-            ObjectExample example = new ObjectExample();
-            example.Addition();
+            Childclass childclass = new Childclass();
+            childclass.Addition();
+            childclass.Subtraction();
         }
       
 
