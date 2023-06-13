@@ -6,24 +6,29 @@ using System.Threading.Tasks;
 
 namespace OOPSConcepts
 {
-    //static Method
-    public static class MethodTypes
+    //pass by value
+    public class MethodTypes
     {
-       public static void Multiply()
+      
+     public void Division(int a, int b)
         {
-            int a = 5, b = 9;
-            Console.WriteLine("Multiplication of two number is => " + a * b);
+            int result = a / b;
+            Console.WriteLine(result);
         }
-                
+       
     }
-    public class Nonstatic
+    //pass by Ref
+    class PassByRef
     {
-        public int calculation(int x, int y)
+        public int value
         {
-            int val = x * y;
-            return val;
+            get;
+            set;
+        }
+        public PassByRef(int passbyref)
+        {
+            this.value = passbyref;
         }
     }
-    
 }
     

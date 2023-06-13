@@ -11,12 +11,14 @@ namespace OOPSConcepts
        
         public static void Main(string[] args)
         {
-            //Static Method
-            MethodTypes.Multiply();
-            //Non-Static Method
-            Nonstatic nonstatic = new Nonstatic();
-            int result=nonstatic.calculation(5, 10);
-            Console.WriteLine(result);
+            MethodTypes methodTypes = new MethodTypes();
+            methodTypes.Division(100, 10);
+            PassByRef v1 = new PassByRef(12);
+            PassByRef v2 = new PassByRef(22); //Breakpoint
+            v2 = v1;
+            Console.WriteLine(v1.value);
+            Console.WriteLine(v2.value);
+            Console.ReadLine();
         }
       
 
