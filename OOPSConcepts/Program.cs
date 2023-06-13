@@ -11,16 +11,25 @@ namespace OOPSConcepts
        
         public static void Main(string[] args)
         {
-            MethodTypes methodTypes = new MethodTypes();
-            methodTypes.Division(100, 10);
-            PassByRef v1 = new PassByRef(12);
-            PassByRef v2 = new PassByRef(22); //Breakpoint
-            v2 = v1;
-            Console.WriteLine(v1.value);
-            Console.WriteLine(v2.value);
-            Console.ReadLine();
+            //single inheritnce
+            Dog dog = new Dog();
+            dog.Animalname();
+            dog.Animal();
+            //Multilevel inheritance
+            Animalsound animalsound = new Animalsound();
+            animalsound.soundName();
+            animalsound.Animalname();
+            animalsound.Animal();
+            //hierarchical inheritance
+            Pig pig = new Pig();
+            pig.Animal();
+            pig.Name();
+            //Mutiple inheritance
+            Rectangle rect = new Rectangle(5, 10, "blue");
+            Console.WriteLine("Area of rectangle: " + rect.GetArea());
+            Console.WriteLine("Color of rectangle: " + rect.GetColor());
         }
-      
+
 
     }
 }
