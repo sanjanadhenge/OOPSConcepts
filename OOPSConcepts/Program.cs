@@ -10,9 +10,9 @@ namespace OOPSConcepts
     {
         public static void Main(string[] args)
         {
-          EncapsulationDemo demo = new EncapsulationDemo();
-          Console.WriteLine(demo.myBalance);
-
+         ChildClass childClass = new ChildClass();
+         childClass.Add();
+         childClass.Diffrence();
         }
       
 
