@@ -10,9 +10,8 @@ namespace OOPSConcepts
     {
         public static void Main(string[] args)
         {
-         ChildClass childClass = new ChildClass();
-         childClass.Add();
-         childClass.Diffrence();
+         VariableTypes variableTypes = new VariableTypes();
+            variableTypes.DisplayData();
         }
       
 
