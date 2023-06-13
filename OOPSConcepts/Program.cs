@@ -10,9 +10,20 @@ namespace OOPSConcepts
     {
         public static void Main(string[] args)
         {
-            Childclass childclass = new Childclass();
-            childclass.Addition();
-            childclass.Subtraction();
+            Console.WriteLine("Method Overloding ==>");
+            PolymorphismDemo polymorphismDemo = new PolymorphismDemo();
+            int result1 = polymorphismDemo.Sum(5, 8);
+            Console.WriteLine(result1);
+            int result2 = polymorphismDemo.Sum(5, 8,15);
+            Console.WriteLine(result2);
+            Console.WriteLine("Method Overriding ==>");
+            Animal animal = new Animal();
+            animal.AnimalSound();
+            Dog dog = new Dog();
+            dog.AnimalSound();
+            Pig pig = new Pig();
+            pig.AnimalSound();
+
         }
       
 
